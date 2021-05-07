@@ -1866,6 +1866,21 @@ p {
   .vat-head p{
     font-size: 11px!important;
   }
+  .reportTab{
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .date-container{
+    width: fit-content;
+    margin-bottom: 10px;
+  }
+  .report-container{
+    top: 0px!important;
+  }
+  .tabs-container a{
+    font-size: 8px!important;
+    padding: 15px 5px 25px 5px!important;
+  }
 }
 .inner-rows .col-4-width{
   width: 30%;
@@ -1898,7 +1913,7 @@ p {
   color: #11193c;
 }
 .skat-image{
- height: 25px;
+ height: 20px;
 }
 .skat-image img{
   height: 100%;
@@ -1942,14 +1957,14 @@ p {
   margin-left: 15px;
 }
 .boggor hr{
-  width: 4px;
-  height: 10px!important;
+  width: 3px;
+  height: 6px!important;
   color: #0077ff;
-  margin: 5px 0;
+  margin: 3px 0;
   opacity: unset;
 }
 .boggor p{
-  margin: 10px 0;
+  margin: 8px 0;
   border-radius: 20px;
   border: 1px solid #0077ff;
   box-shadow: 0 3px 20px 0 rgba(33, 108, 252, 0.16);
@@ -2000,12 +2015,12 @@ p {
   color: #0077ff;
 }
 .moms-log{
-  margin-top: -33px!important;
+  margin-top: -38px!important;
 }
 .moms-log>div{
-  padding: 8px 4px 0px 4px!important;
+  padding: 10px 6px 0px 6px!important;
   box-shadow: 0 3px 20px 0 rgba(33, 108, 252, 0.16)!important;
-  background-color: rgba(33, 108, 252, 0.16);
+  /* background-color: rgba(33, 108, 252, 0.16); */
 }
 .report-text a{
   text-decoration: none;
@@ -2015,15 +2030,15 @@ p {
 
 .tabs-container a{
   text-decoration: none;
-  padding: 15px;
+  padding: 15px ;
   background-color: #fff;
   color: #11193c;
   /* opacity: 0.48; */
   font-size: 12px;
   font-weight: 500;
-  border-radius: 10px;
-  box-shadow: -3px -2px 6px -5px rgb(33 108 252 / 16%);
-  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px -2px 4px -2px rgb(33 108 252 / 16%);
+    background-color: #ffffff;
 }
 .active-tab{
   /* box-shadow: 0 3px 20px 0 rgba(33, 108, 252, 0.16); */
@@ -2107,7 +2122,7 @@ p {
 }
 .box-inners{
   background-color: #fff;
-  padding: 10px 20px;
+  padding: 12px 30px;
 }
 .box-inners .img-box{
   width: 35px;
@@ -2116,9 +2131,18 @@ p {
   box-shadow: 0 3px 20px 0 rgba(33, 108, 252, 0.16);
   background-color: #ffffff;
 }
-
+.tabs-container .report-tabs a{
+  padding: 15px 15px 25px 15px;
+  margin-left: -5px;
+}
+.tabs-container .report-tabs a:nth-child(1){
+  margin: 0px!important;
+}
 /* report css start  */
-
+.report-logo img{
+  width: 25px!important;
+  margin-right: 13px!important;
+}
 .date-container{
   border-radius: 10px;
   box-shadow: 0 3px 20px 0 rgba(33, 108, 252, 0.16);
@@ -2129,7 +2153,7 @@ p {
 }
 .report-container{
   position: relative;
-  top: 10px;
+  top: 7px;
 }
 .date-container a{
   text-decoration: none;
@@ -2150,6 +2174,9 @@ p {
 .active-bord{
   border-radius: unset!important;
 }
+.receiveable{
+  width: 100%;
+}
 .receiveable h5{
  margin: 0;
  font-size: 13px;
@@ -2163,8 +2190,37 @@ p {
   line-height: 1.54;
   color: #11193c;
   margin: 3px 0;
-  width: 100%;
+  width: 50%;
 }
 .active-sec{
 padding-bottom: 10px!important;
+}
+.download-btn .btn-download{
+  border-radius: 15px;
+  box-shadow: 0 3px 20px 0 rgba(33, 108, 252, 0.16);
+  background-color: #0077ff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #ffffff;
+  width: 100%;
+  padding: 12px;
+}
+.download-btn .btn-download img{
+  margin-left: 5px;
+}
+.check-list .form-check{
+  padding: 5px 5px 5px 40px;
+}
+.check-list .form-check-input{
+  border-radius: 4px!important;
+  border: solid 2px #001737!important;
+}
+.check-list label{
+  font-size: 13px;
+  line-height: 1.53;
+  color: #11193c;
+}
+.hand-shak img{
+  width: 25px;
 }
