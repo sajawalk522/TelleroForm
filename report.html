@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Reports Dashboard</title>
+</head>
+
+<body>
+    <div class="container-fluid main">
+        <div class="row">
+            <div class="col-lg-2 col-md-12">
+                <!-- left slide start  -->
+                <section class="left-sidebar d-none d-sm-none d-md-block mb-4">
+                    <div>
+                        <div class="logo round d-flex justify-content-center align-items-center">
+                            <div><img src="images/logo.svg" /></div>
+                            <div>
+                                <p>Tellero</p>
+                            </div>
+                        </div>
+                        <div class="tbl-container round d-flex justify-content-between bg-white ">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div><img src="images/logo.svg" /></div>
+                                <div class="tlb d-flex flex-column">
+                                    <p>TLB Groups</p>
+                                    <span>Chadi Maher</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="dropdown-icon" id="rotate-image">
+                                    <img src="images/arrow-down.svg" onclick="toggleDropdown()" />
+                                </div>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <section>
+                                        <div class="setting-dropdown d-flex justify-content-center align-items-center">
+                                            <div class="inner-setting">
+                                                <div
+                                                    class="top-container d-flex justify-content-center align-items-center">
+                                                    <img src="images/add.png" />
+                                                    <h5 class="m-0">Add a business</h5>
+                                                </div>
+                                                <ul class="nav flex-column">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Settings</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Get Help</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Log out</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="left-nav">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"> <img
+                                            src="images/dashboard.png" /><span>Dashboard</span></a>
+                                </li>
+                                <li class="nav-item arrow-list">
+                                    <a class="nav-link  d-flex justify-content-between align-items-center" href="#">
+                                        <div> <img src="images/discount.png" /><span>Sales</span></div> <img
+                                            class="arrowd-img" src="images/arrow-down.svg" />
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"> <img
+                                            src="images/invoice.png" /><span>Bogforing</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"> <img
+                                            src="images/notebook-of-contacts.png" /><span>Contacts</span></a>
+                                </li>
+
+                                <li class="nav-item arrow-list">
+                                    <a class="nav-link  d-flex justify-content-between align-items-center" href="#">
+                                        <div> <img src="images/bank (2).png" /><span>Bank</span></div> <img
+                                            class="arrowd-img" src="images/arrow-down.svg" />
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"> <img src="images/bussiness.png" /><span>Danish
+                                            Agency</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"> <img
+                                            src="images/skill-development.png" /><span>Integrations</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="leftside-bottom">
+                            <div class="profile d-flex justify-content-start align-items-center">
+                                <div>
+                                    <img src="images/Image 1.png" />
+                                </div>
+                                <div>
+                                    <p>Chadi Maher</p>
+                                </div>
+                            </div>
+                            <div class="plan d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <p>Your Plan: </p><span> Basic</span>
+                                </div>
+                                <div>
+                                    <button type="button" class="btn btn-white round">Upgrade</button>
+                                </div>
+                            </div>
+                            <div class="logout">
+                                <a href="#" class="d-flex justify-content-center align-items-center round"><img
+                                        src="images/signoff.png" /> Log out</a>
+                            </div>
+                        </div>
+                </section>
+                <!-- left side end -->
+                <!-- responsive -->
+                <section class="d-block d-sm-block d-md-none">
+                    <div class="mobile-header">
+                        <div class="left-sidebar position-relative">
+                            <div class="logo d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <div><img src="images/logo.svg" /></div>
+                                    <div>
+                                        <p>Tellero</p>
+                                    </div>
+                                </div>
+                                <div class="openbtn" onclick="openNav()"><img src="images/humberger.png" /></div>
+                            </div>
+                        </div>
+                        <div
+                            class="humberger-container d-flex justify-content-between align-items-center position-relative">
+
+                            <div>
+                                <h5>Dashboard</h5>
+                            </div>
+                            <div id="nav-right"><img src="images/arrow-left.png" /></div>
+                            <div id="nav-links" class="position-absolute nav-links">
+                                <section>
+                                    <div class="icon-nav content-container">
+                                        <ul class="nav header justify-content-end">
+                                            <li class="nav-item">
+                                                <a class="nav-link" aria-current="page" href="#"><img
+                                                        src="images/serach.png" /></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#"><img src="/images/information.png" /></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#"><img src="images/Group 2463.png" /></a>
+                                            </li>
+                                            <li class="nav-item active-icon">
+                                                <a class="nav-link active" href="#"><img src="images/folder.svg" /></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#"><img src="images/setting.png" /></a>
+                                            </li>
+                                        </ul>
+                                        <div class="right-icon" id="close-nav">
+                                            <img src="images/arrow-right.png" />
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+
+                        <!-- </div> -->
+                        <!-- left slide start  -->
+                        <section id="mySidepanel" class="left-sidebar sidepanel">
+                            <div class="mobile-sidebar">
+                                <div class="closebtn">
+                                    <a href="javascript:void(0)" onclick="closeNav()"><img src="images/close.png" /></a>
+                                </div>
+                                <div>
+                                    <div class="logo d-flex align-items-center">
+                                        <div><img src="images/logo.svg" /></div>
+                                        <div>
+                                            <p>Tellero</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="tbl-container d-flex justify-content-between bg-white"
+                                            onclick="toggleDropdownNav()">
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <div><img src="images/logo.svg" /></div>
+                                                <div class="tlb d-flex flex-column">
+                                                    <p>TLB Groups</p>
+                                                    <span>Chadi Maher</span>
+                                                </div>
+                                            </div>
+                                            <div id="rotate-image-m" class="rotate-image-m">
+                                                <img src="images/arrow-down.svg" />
+                                            </div>
+                                        </div>
+                                        <div id="myIdDropdown" class="dropdown-content">
+
+                                            <section>
+                                                <div
+                                                    class="setting-popup d-flex justify-content-center align-items-center">
+                                                    <div class="inner-setting">
+                                                        <div
+                                                            class="top-container d-flex justify-content-center align-items-center">
+                                                            <img src="images/add.png" />
+                                                            <h5 class="m-0">Add a business</h5>
+                                                        </div>
+                                                        <ul class="nav flex-column">
+                                                            <li class="nav-item">
+                                                                <a class="nav-link" href="#">Settings</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link" href="#">Get Help</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link" href="#">Log out</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="left-nav">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"> <img
+                                                    src="images/dashboard.png" /><span>Dashboard</span></a>
+                                        </li>
+                                        <li class="nav-item arrow-list">
+                                            <a class="nav-link  d-flex justify-content-between align-items-center"
+                                                href="#">
+                                                <div> <img src="images/discount.png" /><span>Sales</span></div> <img
+                                                    class="arrowd-img" src="images/arrow-down.svg" />
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"> <img
+                                                    src="images/invoice.png" /><span>Bogforing</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"> <img
+                                                    src="images/notebook-of-contacts.png" /><span>Contacts</span></a>
+                                        </li>
+
+                                        <li class="nav-item arrow-list">
+                                            <a class="nav-link  d-flex justify-content-between align-items-center"
+                                                href="#">
+                                                <div> <img src="images/bank (2).png" /><span>Bank</span></div> <img
+                                                    class="arrowd-img" src="images/arrow-down.svg" />
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"> <img src="images/bussiness.png" /><span>Danish
+                                                    Agency</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"> <img
+                                                    src="images/skill-development.png" /><span>Integrations</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="leftside-bottom">
+                                    <div class="profile d-flex justify-content-start align-items-center">
+                                        <div>
+                                            <img src="images/Image 1.png" />
+                                        </div>
+                                        <div>
+                                            <p>Chadi Maher</p>
+                                        </div>
+                                    </div>
+                                    <div class="plan d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <p>Your Plan: </p><span> Basic</span>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-white">Upgrade</button>
+                                        </div>
+                                    </div>
+                                    <div class="logout">
+                                        <a href="#" class="d-flex justify-content-center align-items-center"><img
+                                                src="images/signoff.png" /> Log out</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </section>
+                        <!-- left side end -->
+                </section>
+                <!-- responsive -->
+            </div>
+            <div class="col-lg-10 col-md-12 content-container">
+                <!-- section header -->
+
+                <div class="d-none d-sm-none d-md-block">
+                    <div class="row header round d-flex justify-content-center align-items-center ">
+                        <div class="col-md-8">
+                            <div class="logo moms-logo d-flex align-items-center">
+                                <div><img src="images/crown.png" /></div>
+                                <div>
+                                    <h1>MOMS</h1>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4">
+                            <ul class="nav header-nav moms-header justify-content-end">
+                                <li class="nav-item mx-3">
+                                    <a class="nav-link m-0" href="#">
+                                        <div><img src="images/Image 2.png" /></div>
+                                    </a>
+                                    <div>
+                                        <img src="images/arrow-down.svg" />
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><img src="images/information.png" /></a>
+                                </li>
+
+                                <li class="nav-item ">
+                                    <div class="tbl-container finance d-flex justify-content-between bg-white"
+                                        id="popUpDown">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="btn-logo"><img src="images/translate.png" /></div>
+                                            <div class="finance-btn">
+                                                <a href="#">Finance-2021</a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <img src="images/arrow-down.svg" />
+                                        </div>
+                                    </div>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- section header end -->
+                <div class="row inner-rows">
+                    <div class=" col-9-width">
+
+                        <section class="mt-4">
+                            <div class="d-flex justify-content-between">
+                                <div class="tabs-container report-container d-flex justify-content-start">
+                                    <div>
+                                        <a href="#">Profile Statement</a>
+                                        <a href="#" class="active-tab">Balance</a>
+                                        <a href="#">Balance Sheet</a>
+                                        <a href="#">Opening balance</a>
+                                    </div>
+
+                                </div>
+                                <div class="date-container">
+                                    <a href="#">31 / 12 / 2021</a>
+                                    <img src="images/arrowd- blue.svg" />
+                                </div>
+                            </div>
+                            <div class="mids-container active-bord">
+                                <div class="blanc-date">
+                                    <p>Balance on : 31 /12 /2021</p>
+                                </div>
+                                <div class="vat-section active-bord">
+                                    <div class="vat-return ">
+                                        <div class="vat-head d-flex justify-content-between align-items-center">
+                                            <h5>VAT return</h5>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="sale-vat">
+                                        <div class="receiveable">
+                                            <h5>Receiveable</h5>
+                                        </div>
+                                        <div class="vat-head d-flex justify-content-between align-items-center">
+                                            <p>Debtors, unpaid invoices</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <a href="#">132,757,70 <img src="images/list.svg" /> </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vat-section active-sec active-bord">
+                                    <div class="sale-vat">
+                                        <div class="vat-head d-flex justify-content-between align-items-center">
+                                            <div class="receiveable">
+                                                <h5>Debtors</h5>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <a href="#">132,,70 <img src="images/list.svg" /> </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vat-section active-sec active-bord">
+                                    <div class="sale-vat">
+                                        <div class="vat-head d-flex justify-content-between align-items-center">
+                                            <div class="receiveable">
+                                                <h5>Receivables</h5>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <a href="#">757,70 <img src="images/list.svg" /> </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vat-section active-sec active-bord">
+                                    <div class="sale-vat">
+                                        <div class="receiveable">
+                                            <p>Cash and cash equivalents</p>
+                                        </div>
+                                        <div class="vat-head d-flex justify-content-between align-items-center">
+                                            <div class="receiveable">
+                                                <p>Revolut</p>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <a href="#">132,757,70 <img src="images/list.svg" /> </a>
+                                            </div>
+                                        </div>
+                                        <div class="vat-head d-flex justify-content-between align-items-center">
+                                            <div class="receiveable">
+                                                <p>Cash</p>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <a href="#">-8,757,70 <img src="images/list.svg" /> </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vat-section active-sec active-bord">
+                                    <div class="sale-vat">
+                                        <div class="vat-head d-flex justify-content-between align-items-center">
+                                            <div class="receiveable">
+                                                <h5>Cash Inventories</h5>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <a href="#">33,757,70 <img src="images/list.svg" /> </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vat-section active-sec active-bord">
+                                    <div class="sale-vat">
+                                        <div class="vat-head d-flex justify-content-between align-items-center">
+                                            <div class="receiveable">
+                                                <h5>Omsaetningsaltiver</h5>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <a href="#">132,757,70 <img src="images/list.svg" /> </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vat-section active-sec active-bord">
+                                    <div class="sale-vat">
+                                        <div class="vat-head d-flex justify-content-between align-items-center">
+                                            <div class="receiveable">
+                                                <h5>Activates</h5>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <a href="#">132,757,70 <img src="images/list.svg" /> </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vat-section active-sec active-bord">
+                                    <div class="sale-vat">
+                                        <div class="receiveable">
+                                            <h5>VAT due</h5>
+                                        </div>
+                                        <div class="vat-head d-flex justify-content-between align-items-center">
+                                            <div class="receiveable">
+                                                <p>Sales VAT (outgong VAT)</p>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <a href="#">-142,757,70 <img src="images/list.svg" /> </a>
+                                            </div>
+                                        </div>
+                                        <div class="vat-head d-flex justify-content-between align-items-center">
+                                            <div class="receiveable">
+                                                <p>Purchase moms (incoming VAT)</p>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <a href="#">757,70 <img src="images/list.svg" /> </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                        </section>
+                    </div>
+                    <div class=" col-4-width">
+                        <!-- section right side start  -->
+                        <section class="right-sidebar">
+                            <div class="skat-box round">
+                                <div class="box-inner d-flex justify-content-center align-items-center">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <img class="arrowd-img margin-right" src="images/Ellipse 1432.png" alt="">
+                                        <p class="margin-right">Connect with</p>
+                                        <div class="skat-image">
+                                            <img src="images/skat.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skat-box round p-3 mt-3">
+                                <div class="d-flex justify-content-center">
+                                    <div class="boggor d-flex justify-content-center align-items-center flex-column">
+                                        <p>1</p>
+                                        <hr>
+                                        <hr>
+                                        <hr>
+                                        <p>2</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center flex-column">
+                                        <div class="overfor">
+                                            <p> Overfor til<a href="#"> tellero.dk</a></p>
+                                        </div>
+                                        <div class="overfor">
+                                            <p> Boggor momsbetaling</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="position-relative">
+                                <div class="skat-box round p-3 mt-3 ">
+                                    <div class="d-flex justify-content-start">
+                                        <div class="forbind">
+                                            <h5>Forbind for at Inbderette</h5>
+                                            <p>Typesetting industry. Lorem Ipsum has been the tellero@Banking.com dummy
+                                            </p>
+
+                                            <p> text ever since the 1500s, when an of printing and terms & conditions
+                                                took?Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                industry. </p>
+                                            <p>
+                                                1-Lorem Ipsum has been the <br>
+                                                2-tellero@Banking.com dummy text ever since the 1500s, <br>
+                                                3-when an of printing and terms & conditions took?Typesetting industry.
+                                                Lorem Ipsum has been the tellero<br>
+                                                4-text ever since the 1500s, when an of printing and terms & conditions
+                                                took?<br>
+                                                5-Lorem Ipsum is simply <br>
+
+                                                dummy text of the printing and typesetting industry. 1-Lorem Ipsum <br>
+
+                                                has been the <a href="#">her.</a></p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="company-logo moms-log d-flex justify-content-center align-items-center ">
+                                    <div class="round">
+                                        <div class="box-inners round d-flex justify-content-center align-items-center">
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <div
+                                                    class=" img-box margin-right d-flex justify-content-center align-items-center">
+                                                    <img src="images/logo.svg" alt="">
+                                                </div>
+                                                <div class="skat-image">
+                                                    <img src="images/skat.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="report-text d-flex justify-content-center align-items-center mt-4">
+                                    <a href="#">I have reported manually.</a>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- section right side end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/custom.js"></script>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
