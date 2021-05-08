@@ -1879,7 +1879,10 @@ p {
   }
   .tabs-container a{
     font-size: 8px!important;
-    padding: 15px 5px 25px 5px!important;
+    padding: 12px 10px 25px 10px!important;
+  }
+  .draft-link a{
+    padding: 12px 15px 25px 15px!important;
   }
 }
 .inner-rows .col-4-width{
@@ -2030,15 +2033,17 @@ p {
 
 .tabs-container a{
   text-decoration: none;
-  padding: 15px ;
+  padding: 12px 15px 27px 15px ;
   background-color: #fff;
   color: #11193c;
-  /* opacity: 0.48; */
+  margin-top: -3px;
   font-size: 12px;
   font-weight: 500;
   border-radius: 15px;
   box-shadow: 0px -2px 4px -2px rgb(33 108 252 / 16%);
     background-color: #ffffff;
+    position: relative;
+    top: -3px;
 }
 .active-tab{
   /* box-shadow: 0 3px 20px 0 rgba(33, 108, 252, 0.16); */
@@ -2049,7 +2054,7 @@ p {
   z-index: 3;
 }
 .mids-container{
-  padding: 20px;
+  padding: 25px 20px;
   border-radius: 15px;
   box-shadow: 0 3px 20px 0 rgba(33, 108, 252, 0.16);
   background-color: #ffffff;
@@ -2062,6 +2067,9 @@ p {
   box-shadow: 0 3px 20px 0 rgba(33, 108, 252, 0.16);
   background-color: #ffffff;
   margin-bottom: 15px;
+}
+.vat-box{
+  box-shadow: 0 5px 13px 0 rgba(33, 108, 252, 0.16)!important;
 }
 .mids-container .vat-return{
   margin: 15px;
@@ -2137,6 +2145,9 @@ p {
 }
 .tabs-container .report-tabs a:nth-child(1){
   margin: 0px!important;
+}
+.right-tabs a:nth-child(2){
+  margin-left: -5px;
 }
 /* report css start  */
 .report-logo img{
