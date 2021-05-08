@@ -31,6 +31,15 @@ function toggleDropdown() {
     document.getElementById("myDropdown").classList.toggle("showtoggle");
     document.getElementById("rotate-image").classList.toggle("rotate-now")
 }
+function togglesale() {
+    document.getElementById("dropdownContainer").classList.toggle("showtoggle");
+    document.getElementById("dropdownFun").classList.toggle("showtoggle");
+    // document.getElementById("rotate-image").classList.toggle("rotate-now")
+}
+function toggleheader() {
+    document.getElementById("dropdownHeader").classList.toggle("showtoggle");
+    // document.getElementById("rotate-image").classList.toggle("rotate-now")
+}
 
 function toggleDropdownNav() {
     document.getElementById("myIdDropdown").classList.toggle("showtoggle");
