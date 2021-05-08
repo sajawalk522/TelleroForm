@@ -2035,13 +2035,15 @@ p {
 }
 .moms-log>div{
   padding: 10px 6px 0px 6px!important;
-  box-shadow: 0 3px 20px 0 rgba(33, 108, 252, 0.16)!important;
+  box-shadow: unset!important;
+  height: 50px;
   /* background-color: rgba(33, 108, 252, 0.16); */
 }
 .report-text a{
   text-decoration: none;
   color: #0077ff;
   font-size: 14px;
+  margin-top: 30px;
 }
 
 .tabs-container a{
@@ -2143,7 +2145,8 @@ p {
 }
 .box-inners{
   background-color: #fff;
-  padding: 12px 30px;
+  padding: 15px 30px;
+  box-shadow: 0 3px 20px 0 rgba(33, 108, 252, 0.16);
 }
 .box-inners .img-box{
   width: 35px;
@@ -2195,9 +2198,9 @@ p {
   color: #11193c;
   padding: 5px 30px 20px 30px;
 }
-.active-bord{
+/* .active-bord{
   border-radius: unset!important;
-}
+} */
 .receiveable{
   width: 100%;
 }
