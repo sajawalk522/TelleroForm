@@ -2034,16 +2034,18 @@ p {
   margin-top: -38px!important;
 }
 .moms-log>div{
-  padding: 10px 6px 0px 6px!important;
+  padding: 10px 8px 0px 8px!important;
   box-shadow: unset!important;
-  height: 50px;
+  height: 38px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   /* background-color: rgba(33, 108, 252, 0.16); */
 }
 .report-text a{
   text-decoration: none;
   color: #0077ff;
   font-size: 14px;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .tabs-container a{
