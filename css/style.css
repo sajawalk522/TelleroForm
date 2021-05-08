@@ -1859,6 +1859,7 @@ p {
   }
   .vat-head h5 {
     font-size: 14px!important;
+    font-weight: 500!important;
   }
   .vat-head a{
     font-size: 11px!important;
@@ -1883,6 +1884,12 @@ p {
   }
   .draft-link a{
     padding: 12px 15px 25px 15px!important;
+  }
+  .vat-section {
+    padding: 15px 10px 35px 10px!important;
+  }
+  .mids-container .vat-return{
+    margin: 15px 7px!important;
   }
 }
 .inner-rows .col-4-width{
