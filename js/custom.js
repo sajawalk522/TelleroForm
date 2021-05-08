@@ -1,9 +1,9 @@
 var slide = document.getElementById("mySidepanel");
-var navRight = document.getElementById("nav-right");
+var navRight = document.getElementById("navRight");
 var navlinks = document.getElementById("nav-links");
 var closeLink = document.getElementById("close-nav");
 var enterInfo = document.getElementById("enterInfo");
-enterInfo.addEventListener("click", companyForm);
+// enterInfo.addEventListener("click", companyForm);
 navRight.addEventListener("click", showLinks);
 closeLink.addEventListener("click", closeLinks);
 function showDownSlide() {
@@ -36,7 +36,7 @@ function togglesale() {
     document.getElementById("dropdownFun").classList.toggle("showtoggle");
     // document.getElementById("rotate-image").classList.toggle("rotate-now")
 }
-function toggleheader() {
+function toggleHeader() {
     document.getElementById("dropdownHeader").classList.toggle("showtoggle");
     // document.getElementById("rotate-image").classList.toggle("rotate-now")
 }

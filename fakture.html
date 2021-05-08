@@ -12,7 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <title>Reports Dashboard</title>
+    <title>Fakture Dashboard</title>
 </head>
 
 <body>
@@ -167,7 +167,7 @@
                             class="humberger-container round d-flex justify-content-between align-items-center position-relative">
 
                             <div>
-                                <h5>Reports</h5>
+                                <h5>Fakture</h5>
                             </div>
                             <div id="navRight"><img src="images/arrow-left.png" /></div>
                             <div id="nav-links" class="position-absolute nav-links">
@@ -377,7 +377,7 @@
                             <div class="logo moms-logo d-flex align-items-center">
                                 <div class="report-logo"><img src="images/notes.png" /></div>
                                 <div>
-                                    <h1>Reports</h1>
+                                    <h1>Fakture</h1>
                                 </div>
                             </div>
 
@@ -430,240 +430,201 @@
                 </div>
                 <!-- section header end -->
                 <div class="row inner-rows">
-                    <div class=" col-9-width">
-
-                        <section class="mt-4">
-                            <div class="reportTab d-flex justify-content-between">
-                                <div class="tabs-container report-container d-flex justify-content-start">
-                                    <div class="report-tabs">
-                                        <a href="#">Profile Statement</a>
-                                        <a href="#" class="active-tab">Balance</a>
-                                        <a href="#">Balance Sheet</a>
-                                        <a href="#">Opening balance</a>
-                                    </div>
-
+                    <div class=" col-9-width mt-2">
+                        <div class="fakture round">
+                            <ul class="nav fakture-nav">
+                                <li class="nav-item">
+                                    <img src="images/credit-card (2).png"/>
+                                    <p>Payment</p>
+                                    <span>(balance: 20,000,00)</span>
+                                </li>
+                                <li class="nav-item">
+                                    <img src="images/massege.png"/>
+                                    <p>Messages</p>
+                                    <span>(0)</span>
+                                </li>
+                                <li class="nav-item">
+                                    <img src="images/notes.png"/>
+                                    <p>Notes</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="fakture round mt-3 d-flex justify-content-between align-items-center">
+                            <ul class="nav fakture-nav">
+                                <li class="nav-item">
+                                    <img src="images/invoice (1).png"/>
+                                    <p>Invoice Due</p>
+                                    <span>(The invoice is due by 7 days)</span>
+                                </li>
+                                
+                            </ul>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="reminder">
+                                    <img src="images/paper-plane.png"/>
+                                    <span>Send Reminder</span>
                                 </div>
-                                <div class="date-container">
-                                    <a href="#">31 / 12 / 2021</a>
-                                    <img src="images/arrowd- blue.svg" />
+                                <div class="reminder">
+                                    <img src="images/add-reminder.png"/>
+                                    <span>Create Reminder</span>
                                 </div>
                             </div>
-                            <div class="mids-container active-bord">
-                                <div class="blanc-date">
-                                    <p>Balance on : 31 /12 /2021</p>
+                        </div>
+                        <div class="fakture round mt-3 p-5">
+                            <div class="draft-container m-4">
+                               <div class="draft-image">
+                                   <img src="images/daft.png"/>
+                               </div>
+                               <div class="tellero-logo">
+                                  <img src="images/tellero.png"/>
+                               </div>
+                               <div class="pad-draft">
+                                <div class="draft-list">
+                                    <ul>
+                                        <li>Net Office Stockholm AB</li>
+                                        <li>Fleminggatan</li>
+                                        <li>75, 112 33 Stockholm</li>
+                                        <li>Sweden</li>
+                                        <li>Att: Harry Lainio</li>
+                                        <li>Vat No: SE556723-B21961</li>
+                                    </ul>
                                 </div>
-                                <div class="vat-section active-bord">
-                                    <div class="vat-return ">
-                                        <div class="vat-head d-flex justify-content-between align-items-center">
-                                            <h5>Activate</h5>
-                                        </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="draft-date d-flex  align-items-center">
+                                        <p>Date:</p>
+                                        <span>20/04/2021</span>
                                     </div>
-                                    
-                                    <div class="sale-vat">
-                                        <div class="receiveable">
-                                            <h5>Receiveable</h5>
-                                        </div>
-                                        <div class="vat-head d-flex justify-content-between align-items-center">
-                                            <p>Debtors, unpaid invoices</p>
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <a href="#">132,757,70 <img src="images/list.svg" /> </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="vat-section active-sec active-bord">
-                                    <div class="sale-vat">
-                                        <div class="vat-head d-flex justify-content-between align-items-center">
-                                            <div class="receiveable">
-                                                <h5>Debtors</h5>
-                                            </div>
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <a href="#">132,,70 <img src="images/list.svg" /> </a>
-                                            </div>
-                                        </div>
+                                    <div class="draft-date d-flex  align-items-center">
+                                        <p>Invoice no.</p>
+                                        <span>4086</span>
                                     </div>
                                 </div>
-                                <div class="vat-section active-sec active-bord">
-                                    <div class="sale-vat">
-                                        <div class="vat-head d-flex justify-content-between align-items-center">
-                                            <div class="receiveable">
-                                                <h5>Receivables</h5>
+                               </div>
+                              <div class="draft-table">
+                                  <h5>Invoice</h5>
+                                  <div class="image-container">
+                                      <div class="inner-container round">
+                                        <table class="table table-striped custom-table-draft">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Description</th>
+                                                    <th scope="col">Quality</th>
+                                                    <th scope="col">Units</th>
+                                                    <th scope="col">Unit Price</th>
+                                                    <th scope="col">Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Poading 120</th>
+                                                    <td>1.00</td>
+                                                    <td>QTY</td>
+                                                    <td>7,500.00</td>
+                                                    <td>7,500.00</td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                        </table>
+                                      </div>
+                                     <div class="d-flex justify-content-end">
+                                        <div class="sub-container round">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <h5>Subtotal</h5>
+                                                <p>7,500.00</p>
                                             </div>
                                             <div class="d-flex justify-content-between align-items-center">
-                                                <a href="#">757,70 <img src="images/list.svg" /> </a>
+                                                <h5>VAT  <span>(25.00%)</span></h5>
+                                                <p>1,875.00</p>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="vat-section active-sec active-bord">
-                                    <div class="sale-vat">
-                                        <div class="receiveable">
-                                            <p>Cash and cash equivalents</p>
-                                        </div>
-                                        <div class="vat-head d-flex justify-content-between align-items-center">
-                                            <div class="receiveable">
-                                                <p>Revolut</p>
+                                            <div class=" table-bottom d-flex justify-content-between align-items-center">
+                                                <h5>TOTAL SEK</h5>
+                                                <p>9375,00</p>
                                             </div>
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <a href="#">132,757,70 <img src="images/list.svg" /> </a>
-                                            </div>
-                                        </div>
-                                        <div class="vat-head d-flex justify-content-between align-items-center">
-                                            <div class="receiveable">
-                                                <p>Cash</p>
-                                            </div>
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <a href="#">-8,757,70 <img src="images/list.svg" /> </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="vat-section active-sec active-bord">
-                                    <div class="sale-vat">
-                                        <div class="vat-head d-flex justify-content-between align-items-center">
-                                            <div class="receiveable">
-                                                <h5>Cash Inventories</h5>
-                                            </div>
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <a href="#">33,757,70 <img src="images/list.svg" /> </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="vat-section active-sec active-bord">
-                                    <div class="sale-vat">
-                                        <div class="vat-head d-flex justify-content-between align-items-center">
-                                            <div class="receiveable">
-                                                <h5>Omsaetningsaltiver</h5>
-                                            </div>
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <a href="#">132,757,70 <img src="images/list.svg" /> </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="vat-section active-sec active-bord">
-                                    <div class="sale-vat">
-                                        <div class="vat-head d-flex justify-content-between align-items-center">
-                                            <div class="receiveable">
-                                                <h5>Activates</h5>
-                                            </div>
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <a href="#">132,757,70 <img src="images/list.svg" /> </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="vat-section active-sec active-bord">
-                                    <div class="sale-vat">
-                                        <div class="receiveable">
-                                            <h5>VAT due</h5>
-                                        </div>
-                                        <div class="vat-head d-flex justify-content-between align-items-center">
-                                            <div class="receiveable">
-                                                <p>Sales VAT (outgong VAT)</p>
-                                            </div>
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <a href="#">-142,757,70 <img src="images/list.svg" /> </a>
-                                            </div>
-                                        </div>
-                                        <div class="vat-head d-flex justify-content-between align-items-center">
-                                            <div class="receiveable">
-                                                <p>Purchase moms (incoming VAT)</p>
-                                            </div>
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <a href="#">757,70 <img src="images/list.svg" /> </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="vat-section active-sec active-bord">
-                                    <div class="sale-vat">
-                                        <div class="vat-head d-flex justify-content-between align-items-center">
-                                            <div class="receiveable">
-                                                <h5>Gulity VAT</h5>
-                                            </div>
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <a href="#">-142,757,70 <img src="images/list.svg" /> </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="vat-section active-sec active-bord">
-                                    <div class="sale-vat">
-                                        <div class="vat-head d-flex justify-content-between align-items-center">
-                                            <div class="receiveable d-flex align-items-center">
-                                                <h5>Short-term debt  </h5><p>(Under 1 year)</p>
-                                            </div>
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <a href="#">-142,757,70 <img src="images/list.svg" /> </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="vat-section active-sec active-bord">
-                                    <div class="sale-vat">
-                                        <div class="vat-head d-flex justify-content-between align-items-center">
-                                            <div class="receiveable">
-                                                <h5>Passiver</h5>
-                                            </div>
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <a href="#">-166,757,70 <img src="images/list.svg" /> </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                        </section>
+                                         </div>
+                                     </div>
+                                  </div>
+                                  <div class="bottom-list">
+                                      <p> Piease transfer the amount to the account:</p>
+                                      <p>Revolut / Reg.no.  / Account no.  / SWIFT: <a href="#">REVOLT21</a> / IBAN: <a href="#">LT05 3250 0371 9475 0665</a>.
+                                        Please note the invoice no.  <a href="#">4087</a> on the transfer. </p>
+                                      <p> We will charge an interest of 0.70% per month, starting the day after the due date and a fee of 136.37 SEK </p>
+                                  </div>
+                                  <div class="draft-foot d-flex justify-content-center flex-column align-items-center">
+                                     <p>Revimatch AS / Fjeldhammervej 15/2610 Redovre  </p>
+                                     <a href=""> VAT No.  DK39204630 / Phone +46 10-750 07 57 / Web: www.revimatch.se/Mait invoice@revimatch.com</a>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
                     </div>
                     <div class=" col-4-width">
-                        <!-- section right side start  -->
-                        <section class="right-sidebar">
-                            <div class="skat-box round">
-                                <div class="box-inner d-flex justify-content-center align-items-center">
-                                    <div class="d-flex justify-content-center align-items-center">
-                                        <p class="margin-right">Print</p>
+                        <section>
+                            <div class="download-btn mt-2">
+                                <button class="btn btn-download bg-white">Send as</button>
+                            </div>
+                            <div class="download-btn mt-3">
+                                <button class="btn btn-download bg-blue-btn">Register Payment</button>
+                            </div>
+                            <div class="download-btn mt-3">
+                                <button class="btn btn-download bg-white">Download PDF</button>
+                            </div>
+                            <div class="d-flex justify-content-center my-4">
+                                <button class="btn btn-download btn-more">More <img
+                                        src="images/arrowd- blue.svg"></button>
+                            </div>
+                        </section>
+                        <!-- file attacked section -->
+                        <section class="file-section position-relative">
+                            <div class="file-head bg-white shadow-common">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h4>Attached files</h4>
+                                    <img src="images/dots.png">
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <div class="up-file">
+                                    <div class="bg-white">
+                                        <div class="d-flex justify-content-end detail-image">
+                                            <div><img src="./images/detail.png"></div>
+                                        </div>
+                                        <div class="drag-main d-flex justify-content-center align-items-center">
+                                            <div>
+                                                <div class="d-flex justify-content-center">
+                                                    <img src="./images/upload.png">
+                                                </div>
+                                                <div class="right-add-file">
+                                                    <p>Click or drag &amp; drop the File here to upload.</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="download-btn mt-3">
-                                 <button class="btn btn-download">Download as <img src="images/whitearrow.svg"/></button>
-                            </div>
-                            <div class="check-list mt-5">
-                                
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-                                    <label class="form-check-label" for="flexCheckChecked">
-                                        View account with 0 balance
-                                    </label>
-                                  </div>
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Show account no.
-                                    </label>
-                                  </div>
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-                                    <label class="form-check-label" for="flexCheckChecked">
-                                        Show mom type
-                                    </label>
-                                  </div>
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-                                    <label class="form-check-label" for="flexCheckChecked">
-                                        Include cash journal entries
-                                    </label>
-                                  </div>
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Show comparison with the previous year
-                                    </label>
-                                  </div>
+                            <div class="bg-white pra-section d-flex align-items-end shadow-common">
+                                <div>
+                                    <p>Typesetting industry. Lorem Ipsum has been the tellero@Banking.com dummy text
+                                        ever since the 1500s, when an of printing and terms & conditions took?Lorem
+                                        Ipsum is simply dummy text of the
+                                    </p>
+                                </div>
                             </div>
                         </section>
-                        <!-- section right side end -->
+                        <!-- file attacked section -->
+                        <!-- get started section -->
+                        <section class="get-started">
+                            <div class="bg-white shadow-common ">
+                                <div class="d-flex justify-content-center">
+                                    <img src="./images/credit-card (1).png">
+                                </div>
+                                <div>
+                                    <p>Typesetting industry. Lorem Ipsum has been the tellero@Banking.com dummy text</p>
+                                </div>
+                                <div class="btn-wrapper">
+                                    <button class="btn btn-start bg-white">Get Started</button>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- get started section -->
+                    </section>
                     </div>
                 </div>
             </div>
