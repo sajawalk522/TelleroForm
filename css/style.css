@@ -9,8 +9,8 @@ body {
 /* common css  start*/
 
 .main {
-  max-width: 1348px;
-  margin: 0 auto;
+  /* max-width: 1348px;
+  margin: 0 auto; */
 }
 
 .btn-custom {
@@ -422,15 +422,25 @@ p {
 /* left sidebar css  */
 
 .left-sidebar {
-  padding: 15px 0px;
-  /* height: 100vh;
-  position: fixed!important;
-  top: 0.6rem;
-  min-width: 215px;
+  padding: 15px 15px;
   overflow-y: auto;
-  overflow-x: hidden; */
+  height: 100vh;
+  position: fixed!important;
+  min-width: 205px;
+
+}
+.left-sidebar::-webkit-scrollbar {
+  display: none;
+  z-index: -1;
 }
 
+.left-sidebar::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+.left-sidebar::-webkit-scrollbar-track {
+  background:transparent;
+}
 .left-sidebar p {
   margin: 0 !important;
 }
@@ -1007,9 +1017,9 @@ p {
 .mobile-header .left-sidebar .logo > div p {
   font-size: 28px !important;
 }
-.left-sidebar {
+/* .left-sidebar {
   position: relative;
-}
+} */
 .mobile-tbl {
   width: 40%;
   position: absolute;
