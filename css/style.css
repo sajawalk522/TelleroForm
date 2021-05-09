@@ -1749,6 +1749,25 @@ p {
 
 /* responsive css start  */
 @media only screen and (max-width: 769px) {
+  .fakture-mobile{
+    display: none;
+  }
+  .fakture{
+    overflow-x: scroll;
+    padding: 16px 10px 0px 10px!important;
+  }
+  .fakture .fakture-nav p{
+    font-size: 10px;
+  }
+  .reminder {
+    padding: 5px 10px!important;
+  }
+  .fakture::-webkit-scrollbar {
+    width: 0px;
+  }
+  .fakture .nav{
+    flex-wrap: nowrap;
+  }
   .left-sidebar{
     height: unset;
     padding:0;
