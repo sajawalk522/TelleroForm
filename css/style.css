@@ -2262,6 +2262,12 @@ padding-bottom: 10px!important;
 
 #dropdownHeader ul{
   position: absolute;
+  top: 64px;
+  right: 0px;
+  z-index: 9999;
+}
+#toggledropdown ul{
+  position: absolute;
   top: 76px;
   right: 9px;
 }
